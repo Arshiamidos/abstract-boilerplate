@@ -1,0 +1,18 @@
+@import "general";
+@import "theme";
+@import "media";
+.App {
+  direction: rtl;
+  .main-container {
+    padding: 2px;
+  }
+}
+.odd-row{
+background-color: #ddd;
+}
+.even-row{
+  background-color: rgb(247, 246, 184);
+}
+.ant-modal-content{
+  width:600px;
+}

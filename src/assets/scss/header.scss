@@ -1,0 +1,46 @@
+@import "mixins";
+
+.header {
+  background-color: #337ab7;
+  @include gradient;
+  min-height: 110px;
+  padding: 0 0;
+  .section {
+    display: flex;
+    justify-content: space-between;
+    > div {
+
+    }
+    .right {
+      display: flex;
+      .logo-wrapper {
+        font-size: 30px;
+        color: #fff;
+        font-weight: bold;
+        //margin-left: 30px;
+      }
+      .main-menu {
+        //font-weight: bold;
+      }
+    }
+    .left {
+      .user-menu {
+        color: #ffffff;
+        .head {
+          line-height: 36px;
+          font-size: 14px;
+          background: $dark-navy;
+          padding: 0 10px;
+          border-radius: 4px;
+          cursor: pointer;
+          span {
+            margin-left: 20px;
+          }
+        }
+        .body {
+          display: none;
+        }
+      }
+    }
+  }
+}

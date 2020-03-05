@@ -1,0 +1,20 @@
+@import "./color";
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+@mixin gradient {
+  background: $light-navy;
+  background: -moz-linear-gradient(left, $middle-navy 0%, $high-light-navy 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, $middle-navy), color-stop(100%, $high-light-navy));
+  background: -webkit-linear-gradient(left, $middle-navy 0%, $high-light-navy 100%);
+  background: -o-linear-gradient(left, $middle-navy 0%, $high-light-navy 100%);
+  background: -ms-linear-gradient(left, $middle-navy 0%, $high-light-navy 100%);
+  background: linear-gradient(to right, $middle-navy 0%, $high-light-navy 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3a66', endColorstr='#1F52A0', GradientType=1 );
+}

@@ -1,0 +1,57 @@
+.editable-cell {
+  position: relative;
+
+  //.editable-cell-text-wrapper,
+  .editable-cell-input-wrapper {
+    padding-left: 24px;
+  }
+
+  .editable-cell-text-wrapper {
+    //padding: 5px 5px 5px 24px;
+    //padding: 5px 24px 5px 5px;
+    padding: 5px;
+  }
+
+  .editable-cell-icon,
+  .editable-cell-icon-check {
+    width: 20px;
+    cursor: pointer;
+  }
+
+  .editable-cell-icon {
+    margin-right: 15px;
+
+  }
+  .editable-cell-icon-check {
+    position: absolute;
+    left: 0;
+    //right: 0;
+  }
+
+  .editable-cell-icon {
+    line-height: 18px;
+    display: none;
+  }
+
+  .anticon.editable-cell-icon-check {
+    line-height: 34px;
+  }
+
+  &:hover .editable-cell-icon {
+    display: inline-block;
+  }
+
+  .editable-cell-icon:hover,
+  .editable-cell-icon-check:hover {
+    color: #108ee9;
+  }
+
+  .editable-add-btn {
+    margin-bottom: 8px;
+  }
+
+  .editable-cell-input-wrapper .ant-input {
+    margin: 0;
+    height: 31px;
+  }
+}
